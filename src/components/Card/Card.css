@@ -1,0 +1,29 @@
+.movie-card {
+    text-align: center;
+    text-decoration: none;
+
+}
+
+.movie-card img {
+    border-radius: 8px;
+
+    max-width: 100%;
+    height: 250px;
+}
+
+.movie-card p {
+    margin-top: 10px;
+    font-size: 20px;
+    color: black;
+    font-weight: 500;
+
+}
+
+/* Optionally, you can add some additional styling for better presentation */
+.movie-card div {
+    border: 1px solid #ddd;
+    /* Add a border for separation */
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Add a subtle box shadow */
+}
