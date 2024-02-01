@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router";
 import "./BookTicketForm.css";
+import { useSelector } from "react-redux";
 
 const BookTicketForm = (data) => {
   const {
@@ -12,11 +13,17 @@ const BookTicketForm = (data) => {
   const [error, setError] = useState("");
   const navigate = useNavigate();
 
+  const bookingData = useSelector((state) => state.movieData.bookingData);
+
   const bookTicket = (formData) => {
     setError("");
     try {
-      localStorage.setItem("BookedTicket", JSON.stringify(formData));
-      navigate("/");
+      const newData = Array.isArray(bookingData)
+        ? [...bookingData, formData]
+        : [formData];
+      localStorage.setItem("BookedTicketData", JSON.stringify(newData));
+      console.log("form data is ", formData);
+      navigate("/booked-tickets");
     } catch (error) {
       setError(error.message);
     }

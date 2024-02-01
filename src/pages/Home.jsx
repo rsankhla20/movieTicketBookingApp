@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Card } from "../components";
 import { useDispatch } from "react-redux";
-import { setAllData } from "../store/dataSlice";
+import { setAllData, setBookingData } from "../store/dataSlice";
 import "./home.css"; // Import the CSS file for styling
 
 const Home = () => {
@@ -24,6 +24,11 @@ const Home = () => {
 
     fetchData();
   }, [dispatch]);
+
+  useEffect(() => {
+    const bookingData = JSON.parse(localStorage.getItem("BookedTicketData"));
+    dispatch(setBookingData(bookingData));
+  }, []);
 
   return (
     <div className="card-grid">

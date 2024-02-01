@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   data: [],
-  testing: "hello ",
+  bookingData: [],
 };
 
 const dataSlice = createSlice({
@@ -12,9 +12,12 @@ const dataSlice = createSlice({
     setAllData: (state, action) => {
       state.data = action.payload;
     },
+    setBookingData: (state, action) => {
+      state.bookingData = action.payload;
+    },
   },
 });
 
-export const { setAllData } = dataSlice.actions;
+export const { setAllData, setBookingData } = dataSlice.actions;
 
 export default dataSlice.reducer;
