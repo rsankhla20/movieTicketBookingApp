@@ -1,5 +1,3 @@
-/* home.css */
-
 .card-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -9,14 +7,13 @@
     margin-bottom: 50px;
 }
 
-/* Responsive layout for tablets */
+
 @media screen and (max-width: 768px) {
     .card-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-/* Responsive layout for mobile */
 @media screen and (max-width: 480px) {
     .card-grid {
         grid-template-columns: 1fr;

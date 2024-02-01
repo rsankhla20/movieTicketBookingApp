@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Card } from "../../components";
 import { useDispatch } from "react-redux";
 import { setAllData, setBookingData } from "../../store/dataSlice";
-import "./home.css"; // Import the CSS file for styling
+import "./home.css";
 
 const Home = () => {
   const [data, setData] = useState([]);

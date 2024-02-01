@@ -1,4 +1,3 @@
-// TicketDetailsPage.js
 import { useEffect, useState } from "react";
 import "./TicketDetailsPage.css";
 
@@ -6,7 +5,6 @@ const TicketDetailsPage = () => {
   const [bookedTickets, setBookedTickets] = useState([]);
 
   useEffect(() => {
-    // Fetch booked tickets from local storage or your API
     const storedTickets = JSON.parse(localStorage.getItem("BookedTicketData"));
     setBookedTickets(storedTickets);
     console.log(storedTickets);

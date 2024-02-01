@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useParams } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { BookTicketForm } from "../../components";
-import "./movieDetails.css"; // Import the CSS file for styling
+import "./movieDetails.css";
 import img3 from "../../assets/img3.png";
 
 const MovieDetails = () => {
@@ -65,6 +65,7 @@ const MovieDetails = () => {
           Book Ticket
         </button>
       </div>
+
       <div
         className="summary"
         dangerouslySetInnerHTML={{
@@ -82,8 +83,6 @@ const MovieDetails = () => {
           </div>
         </div>
       )}
-
-      {/* <Link to="/">Go Back to Home</Link> */}
     </div>
   );
 };
