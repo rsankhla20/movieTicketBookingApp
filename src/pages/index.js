@@ -1,6 +1,6 @@
-import Contact from "./Contact";
-import Home from "./Home";
-import MovieDetails from "./MovieDetails";
-import TicketDetailsPage from "./TicketDetailsPage";
+import Contact from "./Contact/Contact";
+import Home from "./Home/Home";
+import MovieDetails from "./MovieDetails/MovieDetails";
+import TicketDetailsPage from "./TicketDetailsPage/TicketDetailsPage";
 
 export { Contact, Home, MovieDetails, TicketDetailsPage };

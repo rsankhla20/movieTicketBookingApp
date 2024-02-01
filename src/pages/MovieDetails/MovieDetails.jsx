@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { useParams } from "react-router-dom";
 import { useSelector } from "react-redux";
-import { BookTicketForm } from "../components";
+import { BookTicketForm } from "../../components";
 import "./movieDetails.css"; // Import the CSS file for styling
-import img3 from "../assets/img3.png";
+import img3 from "../../assets/img3.png";
 
 const MovieDetails = () => {
   const { movieid } = useParams();
